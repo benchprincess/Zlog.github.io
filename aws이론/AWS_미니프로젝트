@@ -1,0 +1,26 @@
+1.
+ssh -i ~/Users/jiwon/Desktop/oz/benchprincess/haebojago/AWS/seoul-key.pem ubunt
+u@15.164.251.103
+
+2. EC2에 node.js 설치
+sudo apt-get update
+sudo apt-get install -y ca-cert
+sudo mkdir -p etc/apt/keyrings
+curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o etc/apt/keyrings/nodesource.gpg
+NODE_MAJOR=20
+sudo apt-get update
+node --version
+npm --version
+
+cd ..
+ls
+sudo mkdir project
+ls
+ls -al
+sudo chown ubuntu:ubuntu project/
+ls -al
+npm init -y
+cat package.json
+
+3.express 설치
+npm install express
